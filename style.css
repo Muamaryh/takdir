@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffe5e5;
+  text-align: center;
+  padding: 20px;
+}
+
+textarea {
+  width: 80%; 
+  height: 100px; 
+  padding: 10px;
+  border: 2px solid #ff4d4d; 
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#charCount {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #555;
+}
+
+button {
+  margin-top: 10px; 
+  padding: 10px 20px;
+  background: #ff4d4d; 
+  color: white;
+  border: none; 
+  border-radius: 6px; 
+  cursor: pointer;
+  font-size: 18px; 
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e63e3e;
+}
+
+.post {
+  margin: 15px auto; 
+  padding: 15px;
+  background: white; 
+  border-left: 6px solid #ff4d4d;
+  border-radius: 10px; 
+  width: 80%; 
+  text-align: left;
+  font-size: 20px; 
+  color: #b30000; 
+  font-weight: bold;
+  animation: fadeIn 0.3s ease;
+}
+
+.meta {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.reactions {
+  margin-top: 10px;
+}
+
+.reactions button {
+  margin-right: 8px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.reactions button:hover {
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 250px; /* ukuran logo */
+  border-radius: 5%; /* bikin bulat kalau mau */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* efek bayangan */
+}
