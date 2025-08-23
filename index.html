@@ -12,14 +12,29 @@
 <body>
   <div class="logo-container">
     <img src="img/muak.webp" alt="Logo" class="logo">
+    <button class="game-btn" onclick="toggleGame()">🎮 Main Game</button>
   </div>
-  <p>Semua keluh kesah, kekesalan, keinginan, harapan kamu sebagai manusia (sebagai hewan juga boleh kok) bisa kamu tuliskan di sini dan semua orang bisa melihatnya.</p>
-  <p>Kalian akan menjadi anonim dan tidak ada yang mengenali satu sama lain</p></p>
-  <textarea id="inputText" maxlength="200" placeholder="Ketik apa saja bebas"></textarea><br>
+
+  <p>Tuliskan apa saja: keluh kesah, keinginan, harapan kamu. Semua akan tampil anonim.</p>
+
+  <textarea id="inputText" maxlength="200" placeholder="Ketik apa saja bebas..."></textarea><br>
   <div id="charCount">0/200</div>
   <button onclick="shout()">KIRIM!</button>
 
+  <hr class="divider">
+
   <div id="wall"></div>
+
+  <!-- Modal Game -->
+  <div id="gameModal" class="game-modal">
+    <div class="game-content">
+      <span class="close" onclick="toggleGame()">&times;</span>
+      <h2>🎮 Pilih Game</h2>
+      <button onclick="chooseTicTacToe()">⭕ Tic Tac Toe</button>
+      <button onclick="startSnake()">🐍 Snake</button>
+      <div id="gameArea"></div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
